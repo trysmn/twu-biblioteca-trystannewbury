@@ -14,17 +14,17 @@ public class Menu {
 
     public String showAllOptions() {
 
-        String emptyString;
-        emptyString = "";
+        String optionsString;
+        optionsString = "";
 
         for (Integer option : menu.keySet()) {
 
             Printer options = new Printer(menu.get(option));
-            emptyString += options.shouldWelcome();
+            optionsString += options.shouldWelcome();
 
         }
 
-        return emptyString;
+        return optionsString;
 
     }
 
